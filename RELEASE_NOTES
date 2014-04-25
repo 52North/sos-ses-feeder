@@ -1,0 +1,13 @@
+Release 1.0.0
+=============
+This release migrates work done so far to a Maven managed project. The
+code base is pushed to to GitHub where development line will be tracked
+from now on. Refer to
+
+  https://github.com/52North/sos-ses-feeder
+
+Features:
+---------
+
+Bugfixes:
+---------

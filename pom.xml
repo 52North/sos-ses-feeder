@@ -154,7 +154,6 @@
 					<aggregate>true</aggregate>
 					<includes>
 						<include>**/*.java</include>
-						<include>src/**/*.xml</include>
 					</includes>
 					<excludes>
 						<exclude>**/log4j*.xml</exclude>
@@ -204,6 +203,7 @@
 
         <pluginManagement>
             <plugins>
+
 				<plugin>
 					<groupId>org.jasig.maven</groupId>
 					<artifactId>maven-notice-plugin</artifactId>
@@ -232,11 +232,11 @@
                     <version>2.4</version>
                     <configuration>
                         <descriptors>
-                            <descriptor>assembly.xml</descriptor>
+                            <descriptor>src/main/assembly/release.xml</descriptor>
                         </descriptors>
                     </configuration>
                 </plugin>
-                
+
                 <plugin>
 					<!-- see http://wiki.eclipse.org/M2E_plugin_execution_not_covered -->
 					<groupId>org.eclipse.m2e</groupId>
@@ -297,7 +297,7 @@
 										<ignore />
 									</action>
 								</pluginExecution>
-								
+
 								<pluginExecution>
 									<pluginExecutionFilter>
 						                <groupId>org.codehaus.groovy.maven</groupId>
@@ -311,7 +311,7 @@
 										<ignore />
 									</action>
 								</pluginExecution>
-								
+
 							</pluginExecutions>
 						</lifecycleMappingMetadata>
 					</configuration>
@@ -428,7 +428,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<applicationName>${project.artifactId}-${project.version}</applicationName>
 		<webappDirectory>${project.build.directory}/${project.build.finalName}</webappDirectory>
-        
+
 		<maven.build.timestamp.format>yyyy</maven.build.timestamp.format>
 		<currentYearDynamic>${maven.build.timestamp}</currentYearDynamic>
 	</properties>
