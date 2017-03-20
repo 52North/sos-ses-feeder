@@ -131,8 +131,7 @@
                             <source>
                                 import java.util.Date
                                 import java.text.MessageFormat
-                                def vartimestamp = MessageFormat.format("{0,date,yyyy}", new
-                                Date())
+                                def vartimestamp = MessageFormat.format("{0,date,yyyy}", new Date())
                                 project.properties['currentYearDynamic'] = vartimestamp
                             </source>
                         </configuration>
@@ -424,7 +423,7 @@
 	<properties>
 		<timestamp>${maven.build.timestamp}</timestamp>
 		<hibernate.version>3.5.0-Final</hibernate.version>
-		<oxf.version>2.0.0-alpha.3.2-SNAPSHOT</oxf.version>
+		<oxf.version>2.0.0-alpha.3.2</oxf.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<applicationName>${project.artifactId}-${project.version}</applicationName>
 		<webappDirectory>${project.build.directory}/${project.build.finalName}</webappDirectory>
