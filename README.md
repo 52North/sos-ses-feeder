@@ -1,3 +1,7 @@
+# ARCHIVED
+
+This project is no longer maintained and will not receive any further updates. If you plan to continue using it, please be aware that future security issues will not be addressed.
+
 # General Infos
 
 The SOS-SES-Feeder acts as an [SOS](https://github.com/52North/SOS/)
